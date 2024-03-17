@@ -1,0 +1,121 @@
+body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    height: auto;
+    width: auto;
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+}
+
+.p {
+    /*background: plum;*/
+    margin: auto;
+    width: 35%;
+    /*border: 3px solid green;*/
+    padding: 40px;
+    margin-top: 15%;
+    margin-bottom:15%
+
+}
+
+.slogan{
+    /*background: salmon;*/
+    margin: auto;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 23px;
+    color: white;
+    /*color: white;*/
+}
+
+.bn{
+    /*background: pink;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    }
+
+.bn input[type="submit"]{
+    border: none;
+    padding: 15px 32px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 28px;
+    background: rgba(0, 151, 18, 0.1);
+    color: rgba(255,255,255,0.9);
+  /*width: 10px;*/
+}
+
+.bn input[type="submit"]:hover{
+    background:rgba(255, 255, 255, 0.6);
+    color:rgba(0,0,0,1);
+}
+
+.hide input[type="submit"]{
+    border: none;
+    padding: 15px 32px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 28px;
+    background: rgba(0, 151, 18, 0.1);
+    color: rgba(255,255,255,0.9);
+}
+
+.hide input[type="submit"]:hover{
+    background:rgba(255, 255, 255, 0.6);
+    color:rgba(0,0,0,1);
+}
+
+button{
+  border: none;
+  /*color: white;*/
+  padding: 15px 32px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  /*display: inline-block;*/
+  font-size: 28px;
+
+  /*background: white;*/
+  background: rgba(0, 151, 18, 0.1);
+  color: white;
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.6);
+    color: white;
+}
+
+
+
+.hide{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+    /*background-color: green;*/}
+
+
+ .contact-form{
+    position:relative;  top:-40px;
+    color: white;
+    }
+
+.container_r{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50px; /* Set to 0 to align to the left */
+    top: 70px;
+    /*background-color: pink;*/
+    height: 250px;
+}
+
+.firma{
+    position:relative;  top:1px; left: 1px;
+    border: none;
+}
+
+#merge{
+    border: none;
+    border-radius: 100%; /* Make it round */
+    width: 100px;
+    height: 100px;
+    background: pink;
+
+}

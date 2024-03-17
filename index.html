@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mmmmm...</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/round.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="p">
+    <div class="slogan">
+        <h1>"We are a creative group of people who design influential brands and digital experiences."</h1>
+    </div>
+    <div class="bt">
+        {% if show_rounds %}
+    <form action="{{ url_for('toggle_rounds') }}" method="get" class="bton">
+        <div class="hide">
+        <input type="submit" value="Hide"></div>
+    </form>
+    <div class="container_r">
+        <div class="r_1">1</div>
+        <div class="r_2">2</div>
+        <div class="r_3">
+            <form action="{{ url_for('render_login') }}" method="get">
+                <div class = "firma">
+                <input type="submit" value="firma" id = "merge">
+                </div>
+            </form>
+        </div>
+    </div>
+{% else %}
+
+    <form action="{{ url_for('toggle_rounds') }}" method="get" >
+        <div class = "bn">
+        <input type="submit" value="Start" >
+
+    </form>
+{% endif %}
+        {% if show_form %}
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="{{ url_for('submit') }}" method="post">
+                    <p>First Name: <input type="text" name = "first_name"></p>
+                    <p>Last Name: <input type="text" name = "last_name"></p>
+                    <p>Email: <input type="text" name = "email"></p>
+                    <p>Firm: <input type="text" name = "firm"></p>
+                    <p>Business Domain: <input type="text" name = "domain"></p>
+                    <p>*Leave us a message: <input type="text" name = "message"></p>
+                    <p><input type="submit" value="Submit" name = "submit"></p>
+                </form>
+                {% if form_submitted %}
+                    <p>The form was sent!</p>
+                {% endif %}
+            </div>
+        {% else %}
+            <form action="{{ url_for('render_form') }}" method="get">
+                <div class="whatever hide">
+                    <input type="submit" value="Contact"></div>
+            </form>
+    </div>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
